@@ -7,7 +7,7 @@
         public string CEP { get; set; }
         public string Endereco { get; set; }
         public string Produto { get; set; }
-        public DateTime DataCompra { get; set; }
+        public DateTime? DataCompra { get; set; } 
 
     }
 }
