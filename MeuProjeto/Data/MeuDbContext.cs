@@ -33,7 +33,7 @@ public class MeuDbContext
                             CEP = reader["CEP"].ToString(),
                             Endereco = reader["Endereco"].ToString(),
                             Produto = reader["Produto"].ToString(),
-                            DataCompra = reader["DataCompra"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(reader["DataCompra"])
+                            DataCompra = Convert.ToDateTime(reader["DataCompra"])
                         };
                     }
                 }
