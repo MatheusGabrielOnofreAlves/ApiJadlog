@@ -30,11 +30,9 @@ public class MeuDbContext
                         {
                             CPF = reader["CPF"].ToString(),
                             Nome = reader["Nome"].ToString(),
-                            CEP = reader["CEP"].ToString(),
                             Endereco = reader["Endereco"].ToString(),
                             Produto = reader["Produto"].ToString(),
-                            DataCompra = reader["DataCompra"] is DBNull ? (DateTime?)null : reader.GetDateTime(reader.GetOrdinal("DataCompra"));
-
+                           
                         };
                     }
                 }
