@@ -20,6 +20,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseDeveloperExceptionPage(); // 🔥 Exibe erros detalhados
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
