@@ -18,7 +18,7 @@ public class MeuDbContext
         using (var connection = new MySqlConnection(_connectionString))
         {
             connection.Open();
-            string query = "SELECT * FROM Clientes WHERE CPF = @CPF";
+            string query = "SELECT * FROM clientes WHERE CPF = @CPF";
             using (var command = new MySqlCommand(query, connection))
             {
                 command.Parameters.AddWithValue("@CPF", cpf);
